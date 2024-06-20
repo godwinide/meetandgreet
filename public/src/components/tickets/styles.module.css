@@ -1,0 +1,117 @@
+.title {
+    margin-top: 4em;
+    margin-bottom: 2em;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FF725E;
+}
+
+.para {
+    margin-bottom: 2em;
+}
+
+.plansWrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 2em 1em;
+    height: 25em;
+}
+
+.leftplan {
+    border-right: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.rightplan {
+    border-left: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.centerplan {
+    z-index: 10;
+    background-color: #FF725E;
+    height: 28em;
+}
+
+.centerplan .planTitle {
+    color: #fff;
+}
+
+.planTitle {
+    font-size: .9em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.priceWrap {
+    display: flex;
+    align-items: center;
+    margin: 1em auto;
+}
+
+.price {
+    font-weight: 900;
+    font-size: 1.2em;
+    margin: 0 .5em;
+}
+
+.featuresWrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.feature {
+    font-size: .7em;
+    margin-bottom: 1em;
+}
+
+.feature i {
+    margin-right: .5em;
+}
+
+.cta {
+    font-weight: bold;
+    font-size: 1em;
+    padding: .5em 1em;
+    text-transform: capitalize;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #FF725E;
+    margin: 1em auto;
+    display: inline-block;
+    width: 7em;
+    text-align: center;
+}
+
+.centerplan .cta {
+    background-color: #000;
+}
+
+.centerplan .priceWrap {
+    color: #fff;
+}
+
+
+@media screen and (max-width: 768px) {
+    .plansWrap {
+        flex-direction: column;
+    }
+
+    .plan {
+        padding: 1em 1em;
+        height: 25em;
+        width: 100%;
+        margin-bottom: 1em;
+    }
+}

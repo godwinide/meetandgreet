@@ -1,0 +1,19 @@
+{
+  "name": "meetandgreet-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "express-ejs-layouts": "^2.5.1",
+    "nodemailer": "^6.9.14",
+    "nodemon": "^3.1.3"
+  }
+}
