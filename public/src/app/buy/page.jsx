@@ -56,7 +56,7 @@ const Buy = () => {
             })
           };
 
-        const url = 'http://localhost:5000/api/sendForm';
+        const url = 'https://meetandgreetbooking.com/api/sendForm';
         
         // Make the POST request using fetch
     fetch(url, requestOptions)
