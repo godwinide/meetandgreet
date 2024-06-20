@@ -10,8 +10,7 @@ const Contact = () => {
         </p>
 
         <div className={`${styles.contactWrap}`}>
-            <div><strong>Email: </strong>info@meetandgreet.com</div>
-            <div><strong>Phone: </strong>+1 234  5667 333</div>
+            <div><strong>Email: </strong>info@meetandgreetbooking.com</div>
             <div><strong>Business Hours: </strong>Monday - Friday, 9:00 AM - 5:00 PM</div>
         </div>
 

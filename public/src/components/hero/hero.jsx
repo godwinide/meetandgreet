@@ -1,7 +1,11 @@
-import React from 'react'
+"use client"
+
+import React, {useState} from 'react'
 import styles from './hero.module.css'
+import Modal from '../modal/modal'
 
 const hero = () => {
+  const [open, setOpen] = useState(false);
   return (
     <div className="container">
         <div className={styles.heroWrap}>
@@ -11,9 +15,16 @@ const hero = () => {
                 Exclusive Meet and Greet Experiences Just a Click Away
             </p>
             <a href="/buy" className={styles.cta}>buy now</a>
+            <button 
+            onClick={()=> setOpen(true)}
+            className={styles.cta2}>Book Reservation</button>
         </div>
         <img src="/hero.jpg" className={styles.hero} alt="" />
     </div>
+    <Modal 
+    open={open}
+    setOpen={setOpen}
+    />
     </div>
   )
 }

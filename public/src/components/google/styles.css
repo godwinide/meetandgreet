@@ -1,0 +1,19 @@
+#google_translate_element {
+    margin-top: 1em;
+}
+
+.VIpgJd-ZVi9od-l4eHX-hSRGPd {
+    display: none !important;
+}
+
+.skiptranslate {
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+.goog-te-combo {
+    background: red;
+    border: 1px solid #ddd;
+    padding: 5px;
+    font-size: 14px;
+}
