@@ -4,7 +4,7 @@ import React, {useState} from 'react'
 import styles from './hero.module.css'
 import Modal from '../modal/modal'
 
-const hero = () => {
+const Hero = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className="container">
@@ -29,4 +29,4 @@ const hero = () => {
   )
 }
 
-export default hero
+export default Hero

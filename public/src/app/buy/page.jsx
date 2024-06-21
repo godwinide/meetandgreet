@@ -123,8 +123,8 @@ const Buy = () => {
                 />
             </div>
             <div className={styles.formgroup}>
-                <label htmlFor="city">Country:</label>
-                <input type="text" id='city' placeholder='City' 
+                <label htmlFor="country">Country:</label>
+                <input type="text" id='country' placeholder='Country' 
                     value={country}
                     onInput={e => setCountry(e.target.value)}
                     required
