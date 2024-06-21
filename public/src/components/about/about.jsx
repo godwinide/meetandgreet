@@ -41,6 +41,8 @@ const About = () => {
         <Modal 
             open={open}
             setOpen={setOpen}
+            title={"A warning Note"}
+            body={" Contact us via the Live chat or email address to connect you with an agent thanks."}
         />
     </div>
   )

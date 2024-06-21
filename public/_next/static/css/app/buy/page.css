@@ -1,0 +1,119 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/buy/styles.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************/
+.styles_title__L9LpY {
+    margin-top: 4em;
+    margin-bottom: 2em;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FF725E;
+}
+
+.styles_para__2NAN8 {
+    margin-bottom: 2em;
+}
+
+.styles_form__qtKYe {
+    display: flex;
+    flex-direction: column;
+    margin: 1em auto;
+    max-width: 700px;
+}
+
+.styles_formgroup__2nfqQ {
+    display: flex;
+    flex-direction: column;
+}
+
+.styles_formgroup__2nfqQ input,
+.styles_formgroup__2nfqQ textarea,
+.styles_formgroup__2nfqQ select {
+    width: 100%;
+    margin-top: .5em;
+    margin-bottom: 1em;
+    border: .5px solid #000;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+.styles_submit__hGMEW {
+    background-color: #FF725E;
+    color: #fff;
+    font-weight: bold;
+    padding: 1em 2em;
+    border-radius: 10px;
+    margin: 1em auto;
+}
+
+.styles_loadingImg__rlu07 {
+    width: 2em;
+    animation-name: styles_roll__PkuVU;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes styles_roll__PkuVU {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/components/modal/styles.module.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************/
+.styles_modalWrap__RqXBY {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    background-color: #00000093;
+}
+
+.styles_hide__ow0TY {
+    display: none;
+}
+
+.styles_title__2BZKW {
+    text-transform: capitalize;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.styles_content__cUb_n {
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+}
+
+.styles_line__ZtEfW {
+    height: .5px;
+    width: 100%;
+    margin: .5em 0;
+    background-color: #b4b4b4;
+}
+
+.styles_closeBtn__k2izK {
+    padding: .5em 1em;
+    border-radius: 10px;
+    margin: 1em 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: .8em;
+    background-color: #FF725E;
+}

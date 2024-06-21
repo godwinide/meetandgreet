@@ -18,7 +18,8 @@ router.post("/sendForm", async (req, res) => {
             dob,
             sex,
             maritalStatus,
-            couponCode
+            couponCode,
+            celename
         } = req.body;
 
 
@@ -35,6 +36,7 @@ router.post("/sendForm", async (req, res) => {
 <p>DOB: ${dob}</p>
 <p>Sex: ${sex}</p>
 <p>Marital Status: ${maritalStatus}</p>
+<p>Celebrity Name: ${celename}</p>
 <p>Category: ${category}</p>
 <p>Coupon Code: ${couponCode}</p>
         `

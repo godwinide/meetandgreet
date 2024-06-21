@@ -1,9 +1,11 @@
 "use client"
 import React, { useState } from 'react'
 import styles from './styles.module.css'
+import Modal from '@/components/modal/modal'
 
 const Buy = () => {
     const [loading, setLoading] = useState(false)
+    const [open, setOpen] = useState(false);
     const [name, setName] = useState("");
     const [occupation, setOccupation] = useState("");
     const [address, setAddress] = useState("");
@@ -18,6 +20,7 @@ const Buy = () => {
     const [maritalStatus, setMaritalStatus] = useState("");
     const [couponCode, setCouponCode] = useState("");
     const [category, setCategory] = useState("");
+    const [celename, setCeleName] = useState("");
 
 
     const handleSubmit = () => {
@@ -27,7 +30,7 @@ const Buy = () => {
 
         setLoading(true);
 
-        if(!name || !occupation || !address || !phone || !email || !state || !city || !country || !airport || !dob || !sex || !maritalStatus){
+        if(!name || !occupation || !celename || !address || !phone || !email || !state || !city || !country || !airport || !dob || !sex || !maritalStatus){
             alert("Please fill all fields correctly!");
             setLoading(false);
             return;
@@ -52,11 +55,13 @@ const Buy = () => {
                 sex,
                 maritalStatus,
                 category,
+                celename,
                 couponCode
             })
           };
 
         const url = 'https://meetandgreetbooking.com/api/sendForm';
+        // const url = 'http://localhost:2022/api/sendForm';
         
         // Make the POST request using fetch
     fetch(url, requestOptions)
@@ -68,11 +73,12 @@ const Buy = () => {
         })
             .then(data => {
             setLoading(false)
-            alert("Form submitted successfully");
+            setOpen(true);
             console.log('Success:', data); // Handle the response data
         })
             .catch(error => {
-            setLoading(false)
+            setLoading(false);
+            alert("Network error");
             console.error('Error:', error); // Handle any errors
         });
     }
@@ -192,6 +198,14 @@ const Buy = () => {
                 </select>
             </div>
             <div className={styles.formgroup}>
+                <label htmlFor="celebrityName">CELEBRITY NAME:</label>
+                <input type="text" id='celebrityName' placeholder='Celebrity Name'
+                    value={celename}
+                    onInput={e => setCeleName(e.target.value)}
+                    required
+                />
+            </div>
+            <div className={styles.formgroup}>
                 <label htmlFor="cat">MEET AND GREET CATEGORY:</label>
                 <select name="cat" id="cat"
                     value={category}
@@ -221,6 +235,13 @@ const Buy = () => {
                 </button>
             </div>
         </div>
+
+        <Modal 
+            open={open}
+            setOpen={setOpen}
+            title={"Thanks For Applying"}
+            body={"Contact customer service through our email or live chat for payment, thank you."}
+        />
     </div>
   )
 }
