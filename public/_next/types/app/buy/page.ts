@@ -1,8 +1,8 @@
 // File: C:\Users\godwi\OneDrive\Desktop\premiumbyte\meetandgreet-backend\public\src\app\buy\page.jsx
-import * as entry from '../../../../src/app/buy/page.js'
+import * as entry from '../../../../src/app/buy/page.jsx'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
-type TEntry = typeof import('../../../../src/app/buy/page.js')
+type TEntry = typeof import('../../../../src/app/buy/page.jsx')
 
 // Check that the entry is a valid entry
 checkFields<Diff<{

@@ -13,7 +13,7 @@ const Tickets = () => {
                 <h3 className={styles.planTitle}>Regular Meet & Greet tickets</h3>
                 <div className={styles.priceWrap}>
                     <sup>$</sup>
-                    <div className={styles.price}>1,750</div>
+                    <div className={styles.price}>350</div>
                     {/* <div className={styles.duration}>/month</div> */}
                 </div>
                 <div className={styles.featuresWrap}>
@@ -45,7 +45,7 @@ const Tickets = () => {
                 <h3 className={styles.planTitle}>VIP Meet & Greet tickets</h3>
                 <div className={styles.priceWrap}>
                     <sup>$</sup>
-                    <div className={styles.price}>8,200</div>
+                    <div className={styles.price}>1,350</div>
                     {/* <div className={styles.duration}>/month</div> */}
                 </div>
                 <div className={styles.featuresWrap}>
